@@ -1,7 +1,6 @@
 "use client";
 
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
-import NavbarBase from '@/components/navigation/NavbarBase';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import CtaAbout from '@/components/sections/layouts/about/CtaAbout';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
@@ -15,8 +14,6 @@ export default function Home() {
         <NavbarBase
           logoSrc="/images/logo.svg"
           logoAlt="AuroraPulse Logo"
-          logoWidth={120}
-          logoHeight={40}
           leftButtonText="Get Notified"
           onLeftButtonClick={() => {}}
           className="bg-transparent"

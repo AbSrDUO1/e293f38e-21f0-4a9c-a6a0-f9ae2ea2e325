@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import NavbarBase from '@/components/navigation/NavbarBase';
 
 const metadata: Metadata = {
   title: "AuroraPulse",
@@ -11,6 +12,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <NavbarBase
+          logoSrc="/images/logo.svg"
+          logoAlt="AuroraPulse Logo"
+          leftButtonText="Get Notified"
+          onLeftButtonClick={() => {}}
+        />
         {children}
       
         {/* Visual Editor Script - Only runs in iframe */}
