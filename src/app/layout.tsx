@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
-import NavbarBase from '@/components/navigation/NavbarBase';
+import { Inter_Tight } from "next/font/google";
+import "./globals.css";
 
-const metadata: Metadata = {
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+export const metadata: Metadata = {
   title: "AuroraPulse",
   description: "Launch a bold, futuristic landing that introduces the crypto concept, explains how to buy, and presents tokenomics with a yellow theme."
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode; }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <NavbarBase
-          logoSrc="/images/logo.svg"
-          logoAlt="AuroraPulse Logo"
-          leftButtonText="Get Notified"
-          onLeftButtonClick={() => {}}
-        />
+      <body className={`${interTight.variable} antialiased bg-gradient-to-br from-[#0A0A0A] to-[#111]`}>
         {children}
       
         {/* Visual Editor Script - Only runs in iframe */}
