@@ -70,7 +70,6 @@ export default function Home() {
             { label: "Contact", onClick: () => {} }
           ]}
           className="bg-transparent"
-          gradientStyle={{ backgroundImage: "linear-gradient(135deg, #0A0A0A, #FFD400)" }}
         />
       </div>
     </SiteThemeProvider>
