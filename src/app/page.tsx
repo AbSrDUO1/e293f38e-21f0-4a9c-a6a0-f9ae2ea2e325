@@ -8,11 +8,11 @@ import TextGridTokenomics from '@/components/sections/layouts/tokenomics/TextGri
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
 
 export default function Home() {
-const styleVariant = "futuristicAndOutOfBox";
-const colorTemplate = 2;
-const textAnimation = "slide";
+  const styleVariant = "futuristicAndOutOfBox";
+  const colorTemplate = 2;
+  const textAnimation = "slide";
 
-return (
+  return (
     <SiteThemeProvider theme={{ styleVariant, colorTemplate, textAnimation }}>
       <div id="nav" data-section="nav">
         <NavbarBase
@@ -36,7 +36,7 @@ return (
       </div>
       <div id="how-to-buy" data-section="how-to-buy" className="scroll-mt-24">
         <HowToBuy3D
-          title="How to Buy
+          title="How to Buy"
           steps={[
             { title: "Step 1", description: "Create an account.", image: "/images/placeholder1.avif", position: "left", isCenter: false },
             { title: "Step 2", description: "Verify your identity.", image: "/images/placeholder2.avif", position: "center", isCenter: true },
